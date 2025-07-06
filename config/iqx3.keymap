@@ -120,6 +120,13 @@
             bindings = <&kp LS(C) &kp H &kp L &kp DOT &kp N8 &kp N8 &kp N0 &kp N6 &kp N0 &kp N2 &kp AMPERSAND &kp ASTERISK &kp RS(LEFT_PARENTHESIS) &kp ENTER>;
             label = "NEW_MACRO";
         };
+
+        new_macro_change: new_macro_change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp H &kp L &kp DOT &kp N8 &kp N8 &kp N0 &kp N6 &kp N0 &kp N2 &kp CARET &kp AMPS &kp STAR &kp RET>;
+            label = "NEW_MACRO_CHANGE";
+        };
     };
 
     keymap {
@@ -138,10 +145,10 @@
         Number {
             label = "Number";
             bindings = <
-  &kp N1     &kp N2      &kp N3          &kp N4        &kp N5           &kp N6     &kp N7        &kp N8      &kp N9    &kp N0
-  &kp MINUS  &kp EQUAL   &kp F2          &kp F5        &kp TAB          &kp BSLH   &kp LBKT      &kp RBKT    &kp SEMI  &kp APOS
-  &kp GRAVE  &kp C_MUTE  &KEY            &kp C_VOL_DN  &kp C_VOLUME_UP  &none      &kp UP_ARROW  &kp LEFT    &kp DOWN  &kp RIGHT
-                         &kp LEFT_SHIFT  &kp LEFT_ALT  &trans           &kp SPACE  &kp BSPC      &kp DELETE
+  &kp N1     &kp N2      &kp N3             &kp N4        &kp N5           &kp N6     &kp N7        &kp N8      &kp N9    &kp N0
+  &kp MINUS  &kp EQUAL   &kp F2             &kp F5        &kp TAB          &kp BSLH   &kp LBKT      &kp RBKT    &kp SEMI  &kp APOS
+  &kp GRAVE  &kp C_MUTE  &KEY               &kp C_VOL_DN  &kp C_VOLUME_UP  &none      &kp UP_ARROW  &kp LEFT    &kp DOWN  &kp RIGHT
+                         &new_macro_change  &kp LEFT_ALT  &trans           &kp SPACE  &kp BSPC      &kp DELETE
             >;
         };
 
