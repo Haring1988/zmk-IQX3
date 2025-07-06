@@ -117,7 +117,7 @@
         KEY: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(C) &kp H &kp L &kp DOT &kp N8 &kp N8 &kp N0 &kp N6 &kp N0 &kp N2 &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT &kp CARET &kp ENTER>;
+            bindings = <&kp LS(C) &kp H &kp L &kp DOT &kp N8 &kp N8 &kp N0 &kp N6 &kp N0 &kp N2 &kp AMPERSAND &kp ASTERISK &kp RS(LEFT_PARENTHESIS) &kp ENTER>;
             label = "NEW_MACRO";
         };
     };
