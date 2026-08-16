@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmk
-      revision: v0.3.0
+      remote: zmkfirmware
+      revision: feat/pointers-move-scroll
       import: app/west.yml
   self:
     path: config
